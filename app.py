@@ -198,7 +198,9 @@ if not st.session_state['logged_in']:
     </style>
     """
     st.markdown(css_login, unsafe_allow_html=True)
-    st.markdown("<div style='height: 10vh;'></div>", unsafe_allow_html=True)
+    
+    # Mengurangi padding agar layout lebih ke atas/pas di tengah
+    st.markdown("<div style='height: 2vh;'></div>", unsafe_allow_html=True)
     
     col_kiri, space, col_kanan = st.columns([1, 0.1, 1.2])
     
@@ -272,7 +274,7 @@ if not st.session_state['logged_in']:
             st.write("1. Buat akun di tab Daftar.\n2. Lakukan login.\n3. Akses Dashboard untuk pantau produktivitas dan uang Anda.")
         with tab5:
             st.subheader("ℹ️ Tentang")
-            st.write("Dibangun oleh **ArrakiWeb** (2026) untuk meringankan beban pikiran anda yang menumpuk. UNRAV berasal dari kata UNRAVEL yang berarti mengurai. Jika tugas-tugas anda tertumpuk serta tanggungan anda tak karuan sehingga menjadi benang kusut, UNRAV membantu anda untuk mengurainya. Setelah mengurai, diharapkan anda bisa fokus dan semakin produktif.")
+            st.write("Dibangun oleh **ArrakiWeb** (2026).")
 
 # ==========================================
 # HALAMAN UTAMA (DASHBOARD DLL)
